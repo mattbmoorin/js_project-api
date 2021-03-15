@@ -1,24 +1,7 @@
-# README
+<h2>javaScript project API</h2>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<h1>Mattyboard</h2>
 
-Things you may want to cover:
+--This is the backend for the Mattyboard javaScript project.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+--The frontend is located here: https://github.com/mattbmoorin/js_project/tree/master/js_project-frontend
