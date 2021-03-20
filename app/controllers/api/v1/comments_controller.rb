@@ -1,22 +1,28 @@
 class Api::V1::CommentsController < ApplicationController
-    def index
-        @comments = Comment.all
+  def index
+    @comments = Comment.all
 
-        render json: @posts, status: 200
-    end
+    render json: @comments, status: 200
+  end
 
-    def create
-        @comment = Comment.find(params[:id])
+  def show
+    @comment = Comment.find(params[:id])
 
-        render json: @posts, status: 200
-    end
+    render json: @comment, status: 200
+  end
 
-    def destroy
-         @comment = Comment.find(params[:id])
+  def create
+    @comment = Comment.create(comment_params)
 
-        render json:{ commentId: @comment.id }
-    end
-end
+    render json: @comments, status: 200
+  end
+
+  def destroy
+    @comment = Comment.find(params[:id])
+    @comment.destroy
+
+    render json:{ commentId: @comment.id }
+  end
 
 private
 
@@ -25,3 +31,4 @@ private
     params.require(:comment).permit(:body)
   end
 end
+ 

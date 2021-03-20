@@ -19,3 +19,17 @@ Post.create([
     { body: 'This is a tsop.'},
     { body: 'This is a yardbird.'}
 ])
+
+Comment.create([
+    { post_id: 51, body: 'This is a comment too.'},
+    { post_id: 52, body: 'This is a comment too too.'},
+    { post_id: 53, body: 'This is a comment too too too.'},
+    { post_id: 54, body: 'This is a shcomment.'},
+    { post_id: 55, body: 'This is a comment too too too too.'},
+    { post_id: 56, body: 'This is a bird.'},
+    { post_id: 57, body: 'This is a comment too too too too too.'},
+    { post_id: 58, body: 'This is a pocomment.'},
+    { post_id: 59, body: 'This is a comment 2342334324.'},
+    { post_id: 60, body: 'This is comment too too too too too too.'},
+    { post_id: 61, body: 'This is a yomment.'}
+])
